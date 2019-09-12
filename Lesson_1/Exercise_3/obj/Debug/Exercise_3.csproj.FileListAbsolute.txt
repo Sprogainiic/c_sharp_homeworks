@@ -1,0 +1,7 @@
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_3\bin\Debug\Exercise_3.exe.config
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_3\bin\Debug\Exercise_3.exe
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_3\bin\Debug\Exercise_3.pdb
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_3\obj\Debug\Exercise_3.csprojResolveAssemblyReference.cache
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_3\obj\Debug\Exercise_3.csproj.CoreCompileInputs.cache
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_3\obj\Debug\Exercise_3.exe
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_3\obj\Debug\Exercise_3.pdb

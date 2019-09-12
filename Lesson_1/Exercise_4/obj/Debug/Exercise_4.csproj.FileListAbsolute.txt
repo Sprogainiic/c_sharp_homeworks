@@ -1,0 +1,14 @@
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_4\obj\Debug\Exercise_4.csprojResolveAssemblyReference.cache
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_4\obj\Debug\Exercise_4.csproj.CoreCompileInputs.cache
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_4\bin\Debug\Exercise_4.exe.config
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_4\bin\Debug\Exercise_4.exe
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_4\bin\Debug\Exercise_4.pdb
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_4\obj\Debug\Exercise_4.exe
+C:\Users\mblin\source\repos\Lesson_1_Homework\Exercise_4\obj\Debug\Exercise_4.pdb
+C:\Users\S68118\Desktop\New folder (3)\Exercise_4\bin\Debug\Exercise_4.exe.config
+C:\Users\S68118\Desktop\New folder (3)\Exercise_4\bin\Debug\Exercise_4.exe
+C:\Users\S68118\Desktop\New folder (3)\Exercise_4\bin\Debug\Exercise_4.pdb
+C:\Users\S68118\Desktop\New folder (3)\Exercise_4\obj\Debug\Exercise_4.csprojAssemblyReference.cache
+C:\Users\S68118\Desktop\New folder (3)\Exercise_4\obj\Debug\Exercise_4.csproj.CoreCompileInputs.cache
+C:\Users\S68118\Desktop\New folder (3)\Exercise_4\obj\Debug\Exercise_4.exe
+C:\Users\S68118\Desktop\New folder (3)\Exercise_4\obj\Debug\Exercise_4.pdb
