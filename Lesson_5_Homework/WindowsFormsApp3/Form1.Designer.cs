@@ -40,6 +40,7 @@
             this.btnGetAll = new System.Windows.Forms.Button();
             this.btnAddRecord = new System.Windows.Forms.Button();
             this.btnDeleteRecords = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,7 +130,7 @@
             // 
             // btnAddRecord
             // 
-            this.btnAddRecord.Location = new System.Drawing.Point(330, 157);
+            this.btnAddRecord.Location = new System.Drawing.Point(233, 157);
             this.btnAddRecord.Name = "btnAddRecord";
             this.btnAddRecord.Size = new System.Drawing.Size(143, 23);
             this.btnAddRecord.TabIndex = 10;
@@ -147,11 +148,22 @@
             this.btnDeleteRecords.UseVisualStyleBackColor = true;
             this.btnDeleteRecords.Click += new System.EventHandler(this.btnDeleteRecords_Click);
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(461, 157);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(143, 23);
+            this.btnUpdate.TabIndex = 12;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDeleteRecords);
             this.Controls.Add(this.btnAddRecord);
             this.Controls.Add(this.btnGetAll);
@@ -186,6 +198,7 @@
         private System.Windows.Forms.Button btnGetAll;
         private System.Windows.Forms.Button btnAddRecord;
         private System.Windows.Forms.Button btnDeleteRecords;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 

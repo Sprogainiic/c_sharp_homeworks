@@ -13,7 +13,8 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-        string sqlConnectionString = @"Data Source=DESKTOP-DCIOL1B\SQLEXPRESS;Initial Catalog=C_Sharp_Exercise_DB;Integrated Security=True";
+        string sqlConnectionString = @"Data Source=WSP6788D;Initial Catalog=MBBM_Test;Integrated Security=True";
+        string tableName = "[MBBM_Test].[dbo].[Persons]";
 
         List<string> genderList = new List<string>() {"", "Male", "Female" };
 
@@ -32,7 +33,7 @@ namespace WindowsFormsApp3
         private void btnAddRecord_Click(object sender, EventArgs e)
         {
 
-            string sqlQueryString = $"INSERT INTO[C_Sharp_Exercise_DB].[dbo].[Persons] " +
+            string sqlQueryString = $"INSERT INTO {tableName} " +
                                     $"([Name], [Surname], [Age], [Gender]) " +
                                     $"VALUES('{txtName.Text}', '{txtSurname.Text}', {txtAge.Text}, '{cmbGender.SelectedItem}')";
 
@@ -52,6 +53,8 @@ namespace WindowsFormsApp3
                     }
                 }
             }
+            dataGridView1.ClearSelection();
+
         }
 
         private void btnDeleteRecords_Click(object sender, EventArgs e)
@@ -79,7 +82,7 @@ namespace WindowsFormsApp3
 
                 foreach (var item in idToDelete)
                 {
-                    string sqlQueryString = $"DELETE FROM [C_Sharp_Exercise_DB].[dbo].[Persons] " +
+                    string sqlQueryString = $"DELETE FROM {tableName} " +
                                             $"WHERE [PersonID] = {item} ";
                     using (SqlCommand sqlCommand = new SqlCommand(sqlQueryString, sqlConnection))
                     {
@@ -96,13 +99,16 @@ namespace WindowsFormsApp3
                 }
 
             }
+
+            dataGridView1.ClearSelection();
+
         }
 
         private void GetAllRecordsFromDB()
         {
             string sqlQueryString = $"" +
                                     $"SELECT PersonID, Name, Surname, Age, Gender " +
-                                    $"FROM dbo.Persons;";
+                                    $"FROM {tableName};";
 
             using (SqlConnection sqlConnection = new SqlConnection(sqlConnectionString))
             {
@@ -113,10 +119,21 @@ namespace WindowsFormsApp3
                 dataGridView1.ReadOnly = true;
                 dataGridView1.DataSource = dataSet.Tables[0];
             }
+            dataGridView1.ClearSelection();
+
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                btnUpdate.Enabled = true;
+            }
+            else
+            {
+                btnUpdate.Enabled = false;
+            }
+
             if (dataGridView1.SelectedRows.Count > 0)
             {
                 btnDeleteRecords.Enabled = true;
@@ -125,6 +142,35 @@ namespace WindowsFormsApp3
             {
                 btnDeleteRecords.Enabled = false;
             }
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            var itemIdToUpdate = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
+
+            var sqlQueryString = $"UPDATE {tableName}" +
+                $" SET [Name] = '{txtName.Text}', [Surname] = '{txtSurname.Text}', [Age] = '{txtAge.Text}', [Gender] = '{cmbGender.SelectedItem}'"+
+                $" WHERE [PersonID] = '{itemIdToUpdate}';";
+              
+
+            using (SqlConnection sqlConnection = new SqlConnection(sqlConnectionString))
+            {
+                sqlConnection.Open();
+
+                using (SqlCommand sqlCommand = new SqlCommand(sqlQueryString, sqlConnection))
+                {
+                    try
+                    {
+                        sqlCommand.ExecuteNonQuery();
+                        GetAllRecordsFromDB();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+            dataGridView1.ClearSelection();
         }
     }
 }
