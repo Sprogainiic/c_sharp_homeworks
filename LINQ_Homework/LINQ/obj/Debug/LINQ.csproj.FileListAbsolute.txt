@@ -1,0 +1,10 @@
+C:\Users\S68118\Desktop\Home Work\LINQ\LINQ\bin\Debug\LINQ.exe.config
+C:\Users\S68118\Desktop\Home Work\LINQ\LINQ\bin\Debug\LINQ.exe
+C:\Users\S68118\Desktop\Home Work\LINQ\LINQ\bin\Debug\LINQ.pdb
+C:\Users\S68118\Desktop\Home Work\LINQ\LINQ\obj\Debug\LINQ.csprojAssemblyReference.cache
+C:\Users\S68118\Desktop\Home Work\LINQ\LINQ\obj\Debug\LINQ.frmEmployeeGrid.resources
+C:\Users\S68118\Desktop\Home Work\LINQ\LINQ\obj\Debug\LINQ.Properties.Resources.resources
+C:\Users\S68118\Desktop\Home Work\LINQ\LINQ\obj\Debug\LINQ.csproj.GenerateResource.cache
+C:\Users\S68118\Desktop\Home Work\LINQ\LINQ\obj\Debug\LINQ.csproj.CoreCompileInputs.cache
+C:\Users\S68118\Desktop\Home Work\LINQ\LINQ\obj\Debug\LINQ.exe
+C:\Users\S68118\Desktop\Home Work\LINQ\LINQ\obj\Debug\LINQ.pdb
